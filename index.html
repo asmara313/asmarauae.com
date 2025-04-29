@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmara Advertising Agency</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/LOGO NEW.png" alt="Asmara Advertising Agency Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner Section -->
+    <section id="banner" class="banner">
+        <img src="images/banner.png" alt="Banner">
+      </section>
+
+    <div class="action-buttons-container">
+        <a href="tel:+971586687003" class="action-button">Call Us</a>
+        <a href="https://wa.me/971586847003" class="action-button">WhatsApp</a>
+        <a href="https://www.instagram.com/asmara_ads" class="action-button">Instagram</a>
+        <a href="portfolio.html" class="action-button" target="_blank">Our Portfolio</a>
+    </div>
+    
+   <!-- About Us Section -->
+<section id="about-us" class="about-us">
+    <div class="about-content">
+        <div class="text">
+            <h2>WELCOME TO ASMARA</h2>
+            <p>We, Asmara Advertising Agency, your creative partner in branding and advertising.
+                Our journey started with a passion for innovative marketing, helping businesses stand 
+                out in a competitive world.</p>
+            <p>From custom printing to digital marketing, we bring ideas to life with precision 
+                and creativity.</p>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="images/about1.jpg" class="slide active" alt="About Us Image 1">
+                    <img src="images/about2.jpg" class="slide" alt="About Us Image 2">
+                    <img src="images/about3.jpg" class="slide" alt="About Us Image 3">
+                    <img src="images/about4.jpg" class="slide" alt="About Us Image 4">
+                </div>
+                <button class="prev" onclick="prevSlide()"></button>
+                <button class="next" onclick="nextSlide()"></button>
+
+            </div>
+        </div>
+</section>
+        
+    <section id="home" class="hero">
+        
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>OUR SERVICES</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="images/business-card.jpg" alt="Business Cards & Bill Books">
+                <h3>BUSINESS CARDS & BILL BOOKS</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/tshirt-printing.jpg" alt="T-shirt Printing">
+                <h3>T-SHIRT PRINTING</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/flyers.jpg" alt="Flyers & Brochures">
+                <h3>FLYERS & BROCHURES</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/flex-sign.jpg" alt="Flex & 3D Sign Boards">
+                <h3>FLEX & 3D SIGN BOARDS</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/car-mat.jpg" alt="Car Mat & Table Mat Printing">
+                <h3>CAR MAT & TABLE MAT PRINTING</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/menu-cards.jpg" alt="Menu Cards & Envelopes">
+                <h3>MENU CARDS & ENVELOPES</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/social-media.jpg" alt="Social Media Promotion">
+                <h3>SOCIAL MEDIA PROMOTION</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/interior-works.jpg" alt="Interior Works">
+                <h3>INTERIOR WORKS</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/logo-design.jpg" alt="Logo Designing">
+                <h3>LOGO DESIGNING</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/digital-signage.jpg" alt="Standing Digital Signage Advertising Display">
+                <h3>STANDING DIGITAL SIGNAGE<br>ADVERTISING DISPLAY</h3>
+            </div>
+            <div class="service-item">
+                <img src="images/video-production.jpg" alt="Video Production">
+                <h3>VIDEO PRODUCTION</h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>OUR PORTFOLIO</h2>
+        <p>SHOWCASE OF OUR PAST WORK</p>
+        <a href="portfolio.html" class="action-button" target="_blank">OUR PORTFOLIO</a>
+    </section>    
+
+    <section id="contact" class="contact">
+        <h2>CONTACT US</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Call Us</h3>
+                <p>Have a question? Just give us a call.</p>
+                <a href="tel:+971586687003" class="contact-link">+971 586687003</a>
+                <a href="tel:+971586847003" class="contact-link">+971 586847003</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>Reach out to us via email for any inquiries.</p>
+                <a href="mailto:asmarauae@gmail.com" class="contact-link">asmarauae@gmail.com</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ASMARA ADVERTISING AGENCY. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+    
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) slide.classList.add("active");
+            });
+        }
+    
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+    
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+    
+        // Auto slide every 3 seconds
+        setInterval(nextSlide, 3000);
+    </script>
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, /* Adjusts for header height */
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        </script>
+        
+    
+</body>
+</html>
