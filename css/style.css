@@ -33,11 +33,12 @@ nav ul li a {
 }
 /* Banner Section Fix */
 .banner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  background-image: url('optimized-banner-1920x600.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
 }
-
 .banner img {
     width: 100%;
     height: auto;
