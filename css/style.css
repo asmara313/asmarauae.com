@@ -258,6 +258,11 @@ html {
         display: block;
         margin: 10px 0;
     }
+    .banner {
+        height: 300px;  /* Reduce the height of the banner on smaller screens */
+        background-size: cover;
+        background-position: center;
+    }
     .action-buttons-container {
         display: flex;
         flex-direction: column;
